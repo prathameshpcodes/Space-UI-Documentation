@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space UI 🚀 | Button</title>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/c565ae8bc2.js" crossorigin="anonymous" crossorigin="anonymous"
+referrerpolicy="no-referrer"></script>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css">
+
+    <!-- space-ui component cdn -->
+    <link rel="stylesheet" href="https://space-ui-components.netlify.app/all-css/main.css">
+
+    <!-- space-ui documentation css -->
+    <link rel="stylesheet" href="/app.css">
+
+</head>
+<body>
+    <div class="docs container p-2 m-auto " >
+        <!-- header starts-->
+        <header class="header header-docs ">
+        
+        <a class="link-brand mx-1" href="/index.html">Space-UI 🚀</a>
+
+        <nav class="ml-auto">
+            <ul>
+              <li class="inline-block mx-1">
+                <a class="link" href="../../index.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+
+              <li class="inline-block mx-1">
+                <a class="link" href="https://github.com/prathameshpcodes/Space-ui-components" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+            </ul>
+        </nav>
+        </header>
+        <!-- header ends -->
+
+        <!-- aside left starts -->
+        <aside class="aside-left">
+            <nav class="aside-container aside-left-container">
+              <ul class="mb-3">
+                <h3 class="my-1p5">Getting Started</h3>
+                <li>
+                  <a href="/pages/getting-started/intro.html"> Introduction </a>
+                </li>
+                <li>
+                  <a
+                    
+                    href="/pages/getting-started/typography.html"
+                  >
+                    Typography
+                  </a>
+                </li>
+                
+              </ul>
+    
+              
+    
+              <ul class="mb-3">
+                <h3 class="my-1p5">Components</h3>
+                <li>
+                  <a href="/pages/components/alert.html">Alert</a>
+                </li>
+                <li><a  href="/pages/components/avatar.html">Avatar</a></li>
+                <li><a href="/pages/components/badge.html">Badge</a></li>
+                <li><a class="link-active" href="/pages/components/button.html">Button</a></li>
+                <li><a href="/pages/components/card.html">Card</a></li>
+                <li><a href="/pages/components/image.html">Image</a></li>
+                <li><a href="/pages/components/input.html">Input</a></li>
+              </ul>
+            </nav>
+          </aside>
+        <!-- aside left ends -->
+
+
+        <!-- main doc starts -->
+        <main class="main-docs">
+            <h1 class="mb-3">Button</h1>
+            <p class="main-text">Button is a tapping target that provides the user a simple way to trigger events like searching, submitting,etc .</p>
+        
+            <!--  button filled  starts  -->
+            <section class="section-component my2" id="button-filled">
+                <h2 class="my-2">Filled Primary Buttons</h2>
+                <div class="component-container">
+                <div class="flex justify-c-ctr alg-i-ctr gap1">
+                    
+                    <button class="btn">Default</button>
+                    <button class="btn error-btn-solid">Error</class=>
+                    <button class="btn primary-btn-solid">Primary</button>
+                    <button class="btn secondary-btn-solid">Secondary</button>
+                    <button class="btn sucess-btn-solid">Sucess</button>
+                    
+                </div>
+    
+                <pre class="pre-code">
+                  <code class="language-html">      
+                    &lt;button class="btn">Default&lt;/button>
+                    &lt;button class="btn btn-error-solid">Error&lt;/button>
+                    &lt;button class="btn btn-primary-solid">Primary&lt;/button>
+                    &lt;button class="btn btn-secondary-solid">Secondary&lt;/button>
+                    &lt;button class="btn btn-success-solid">Success&lt;/button>
+                    
+                    
+                    
+                  </code>
+                </pre>
+            </div>
+            </section>
+              <!-- button filled  starts  -->
+
+            <!-- Outlined Primary Buttons Starts -->
+            <section class="section-component my2" id="button-outline">
+                <h2 class="my-2">Outlined Primary Buttons</h2>
+                <div class="component-container">
+                <div class="flex justify-c-ctr alg-i-ctr gap1">
+                    
+                    <button class="btn error-btn-outline">Error</button>
+                    <button class="btn primary-btn-outline">Primary</button>
+                    <button class="btn secondary-btn-outline">Secondary</button>
+                    <button class="btn sucess-btn-outline">Sucess</button>
+                    
+                </div>
+    
+                <pre class="pre-code">
+                  <code class="language-html">      
+                    &lt;button class="btn btn-error-outline">Error&lt;/button>
+                    &lt;button class="btn btn-primary-outline">Primary&lt;/button>
+                    &lt;button class="btn btn-secondary-outline">Secondary&lt;/button>
+                    &lt;button class="btn btn-success-outline">Success&lt;/button>      
+                    
+                    
+                    
+                  </code>
+                </pre>
+            </div>
+            </section>
+            <!-- Outlined Primary Buttons end -->
+
+            <!-- link button starts -->
+            <section class="my-2 section-component" id="button-link">
+                <h2 class="my-2">Link Button</h2>
+      
+                <div class="component-container">
+                  <div>
+                    <a href="#">
+                        <button class="btn primary-btn-solid btn-link">Link</button>
+                    </a>
+                    <a href="#">
+                        <button class="btn primary-btn-outline btn-link">Link</button>
+                    </a>
+                  </div>
+      
+                  <pre class="pre-code">
+                      <code class="language-html">      
+                    &lt;a href="#">
+                    &lt;button class="btn primary-btn-solid btn-link">Link&lt;/button>
+                    &lt;/a>
+                    &lt;a href="#">
+                    &lt;button class="btn primary-btn-outline btn-link">Link&lt;/button>
+                    &lt;/a>
+                      </code>
+                    </pre>
+                </div>
+              </section>
+            <!-- link button ends -->
+
+            <!-- icon button starts -->
+            <section class="my-2 section-component" id="button-icon">
+                <h2 class="my-2">Icon Button</h2>
+      
+                <div class="component-container">
+                  <div>
+                    <button class="btn primary-btn-solid icon-btn-solid">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        SignOut
+                    </button>
+                    <button class="btn primary-btn-outline icon-btn-outline">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        SignOut
+                    </button>
+                  </div>
+      
+                  <pre class="pre-code">
+                      <code class="language-html">      
+                    &lt;button class="btn primary-btn-solid icon-btn-solid">
+                    &lt;i class="fa-solid fa-arrow-right-from-bracket">&lt;/i> SignOut
+                    &lt;/button>
+                    &lt;button class="btn primary-btn-outline icon-btn-outline">
+                    &lt;i class="fa-solid fa-arrow-right-from-bracket">&lt;/i> SignOut
+                    &lt;/button>
+                      </code>
+                    </pre>
+                </div>
+              </section>
+            <!-- icon button ends -->
+
+            <!-- floating button starts -->
+            <section class="my-2 section-component" id="button-float">
+                <h2 class="my-2">Floating Button</h2>
+      
+                <div class="component-container">
+                  <div>
+                    <button class="floating-btn">
+                        <i class="fa-solid fa-filter"></i>
+                    </button>
+                  </div>
+      
+                  <pre class="pre-code">
+                      <code class="language-html">      
+                    &lt;a href="#">
+                    &lt;button class="floating-btn">
+                    &lt;i class="fa-solid fa-filter">&lt;/i>
+                    &lt;/button>
+                    &lt;/a>
+                      </code>
+                    </pre>
+                </div>
+              </section>
+            <!-- floating button ends -->
+        </main>
+        <!-- main doc ends -->
+
+        <!-- aside right link starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li><a href="#button-filled">Filled Primary Buttons</a></li>
+            <li><a href="#button-outlined">Outlined Primary Buttons</a></li>
+            <li><a href="#button-link">Link Button</a></li>
+            <li><a href="#button-icon">Icon Button</a></li>
+            <li><a href="#button-float">Floating Button</a></li>
+            
+         </ul>
+        </nav>
+      </aside>
+
+      <!-- aside right link starts -->
+    </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
