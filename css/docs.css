@@ -1,0 +1,27 @@
+/* main grid */
+.docs {
+    display: grid;
+    grid-template-areas:
+      "header header  header"
+      "aside-left main aside-right";
+    grid-template-columns: 25rem minmax(0, 1fr) 20rem;
+    grid-template-rows: 8rem 1fr;
+  }
+
+
+  /* main container */
+  .container {
+    color: var(--color-text);
+    min-height: 100vh;
+    max-width: 140rem;
+  }
+
+    /** Header Docs **/
+
+.header-docs {
+    background: var(--color-bg);
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
