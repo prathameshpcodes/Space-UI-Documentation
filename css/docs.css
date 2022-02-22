@@ -1,46 +1,119 @@
 /* main grid */
 .docs {
-    display: grid;
-    grid-template-areas:
-      "header header  header"
-      "aside-left main aside-right";
-    grid-template-columns: 25rem minmax(0, 1fr) 20rem;
-    grid-template-rows: 8rem 1fr;
-  }
+  display: grid;
+  grid-template-areas:
+    "header header  header"
+    "aside-left main aside-right";
+  grid-template-columns: 25rem minmax(0, 1fr) 20rem;
+  grid-template-rows: 8rem 1fr;
+}
 
+/* main container */
+.container {
+  color: var(--color-text);
+  min-height: 100vh;
+  max-width: 140rem;
+}
 
-  /* main container */
-  .container {
-    color: var(--color-text);
-    min-height: 100vh;
-    max-width: 140rem;
-  }
-
-    /** Header Docs **/
+/** Header Docs **/
 
 .header-docs {
-    background: var(--color-bg);
-    grid-area: header;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
+  background: var(--color-bg);
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
+/** aside */
 
+.aside-container {
+  background: var(--color-bg);
+  position: fixed;
+}
 
+.aside-container li {
+  margin: 1.2rem 0.2rem;
+}
+/** aside left **/
 
+.aside-left {
+  grid-area: aside-left;
+}
 
+.aside-left-container {
+  height: 80vh;
+  margin: 1rem 1rem 3rem 6rem;
+  padding: 0 4rem 2rem 0;
+  overflow-y: auto;
+}
 
+.aside-left-container h3 {
+  font-size: 2rem;
+}
 
+** section **/ .section-component {
+  border-top: thin solid var(--color-brand-light);
+}
 
-  /** main container */
+.section-text {
+  font-size: 1.65rem;
+  line-height: 1.5em;
+}
 
-  .main-text {
-    font-size: 1.8rem;
-    line-height: 1.5em;
-  }
+/** component container **/
 
-  .main-docs {
-    grid-area: main;
-    padding: 2.5rem 2rem 3rem 4rem;
-  } 
+.component-container {
+  align-items: center;
+  background: var(--color-white);
+  border: thin solid var(--color-brand-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.component-container > div:not(.grid) {
+  padding: 2rem 2rem 0;
+}
+
+/** pre code **/
+
+.pre-code {
+  margin-bottom: -5rem;
+  width: 100%;
+}
+
+code.hljs {
+  background: var(--color-code-wrapper);
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+/** aside right links */
+
+.aside-right {
+  grid-area: aside-right;
+}
+
+.aside-right-container {
+  margin: 1rem 2rem 3rem 1rem;
+}
+
+.aside-right-container a {
+  color: var(--color-text);
+}
+
+.aside-right-container a:hover {
+  color: var(--color-brand);
+}
+
+/** main container */
+
+.main-text {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+}
+
+.main-docs {
+  grid-area: main;
+  padding: 2.5rem 2rem 3rem 4rem;
+}
