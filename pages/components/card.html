@@ -56,7 +56,6 @@
         </nav>
       </header>
       <!-- header ends -->
-
       <!-- aside left starts -->
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
@@ -99,100 +98,163 @@
           to show user feedback in the form of text-only card on your site.
         </p>
 
-        <!--  Dismiss Card starts  -->
+        <!--  Dismiss card starts  -->
         <section class="section-component my2" id="card-dismiss">
-          <h2 class="my-2">Dismiss Card with shadow</h2>
-          <div class="component-container">
-            <div class="flex justify-c-ctr alg-i-ctr gap1">
-              <div class="card card-dismiss">
-                <button class="ml-auto text-red fs-md">
-                  <i class="fa-solid fa-xmark"></i>
-                </button>
-                <h1 class="card-head mt-1">Lorem Ipsum</h1>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                  alias dicta corporis aperiam
-                </p>
-              </div>
-            </div>
-
-            <pre class="pre-code">
-                  <code class="language-html">      
-                    &lt;div class="card card-dismiss ">
-                    &lt;button class=" ml-auto text-red fs-md ">
-                    &lt;i class="fa-solid fa-xmark">&lt;/i>
-                    &lt;/button>
-                    &lt;h1 class="card-head mt-1">Lorem Ipsum &lt;/h1>
-                    &lt;p class="card-text">""&lt;/p>
-                        &lt;/div>
-
-                  </code>
-                </pre>
-          </div>
-        </section>
-        <!-- Dismiss Card ends  -->
-
-
-
-        <!--  Vertical card starts -->
-        <section class="section-component my2" id="card-vertical">
-          <h2 class="my-2">Vertical Card with Badge</h2>
-          <div class="component-container">
-            <div class="flex justify-c-ctr alg-i-ctr gap1">
-              <div class="card card-vertical shadow-light w-24">
-                <div class="card-vertical-header">
-                  <span class="status-badge text-white">Bestseller</span>
-
-                  <button class="ml-auto card-icon-btn">
-                    <i class="fa-regular fa-heart m-auto"></i>
+            <h2 class="my-2">Dismiss Card with shadow</h2>
+            <div class="component-container">
+              <div class="flex justify-c-ctr alg-i-ctr gap1">
+                <div class="card card-dismiss">
+                  <button class="ml-auto text-red fs-md">
+                    <i class="fa-solid fa-xmark"></i>
                   </button>
-                </div>
-                <img
-                  class="card-vertical-image"
-                  src="/assets/demo-product-1.jpg"
-                  alt=""
-                />
-                <h1 class="card-head">Survey Corps Pin</h1>
-
-                <div class="card-vertical-footer">
-                  <span class="price">₹139.00</span>
-                  <span class="discount-price">₹1000.00</span>
-                  <span class="discount-percent">90%</span>
+                  <h1 class="card-head mt-1">Lorem Ipsum</h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                    alias dicta corporis aperiam
+                  </p>
                 </div>
               </div>
+  
+              <pre class="pre-code">
+                    <code class="language-html">      
+                      &lt;div class="card card-dismiss ">
+                      &lt;button class=" ml-auto text-red fs-md ">
+                      &lt;i class="fa-solid fa-xmark">&lt;/i>
+                      &lt;/button>
+                      &lt;h1 class="card-head mt-1">Lorem Ipsum &lt;/h1>
+                      &lt;p class="card-text">""&lt;/p>
+                          &lt;/div>
+  
+                    </code>
+                  </pre>
             </div>
+          </section>
+          <!-- Dismiss card ends  -->
+          <!-- Overlay Card Starts -->
+        <section class="section-component my2" id="card-overlay">
+            <h2 class="my-2">Card with Overlay</h2>
+            <div class="component-container">
+              <div class="flex justify-c-ctr alg-i-ctr gap1">
+                <div class="card card-text-overlay card-vertical box-light">
+                  <img
+                    loading="lazy"
+                    class="card-vertical-img"
+                    src="/assets/trailer-thumbnail.jpg"
+                    alt="AOT final trailer jpg"
+                  />
+  
+                  <span class="card-vertical-img overlay-content"
+                    ><i class="fas fa-play overlay-play-icon"></i> Play</span
+                  >
+  
+                  <div class="card-text-overlay-row">
+                    <img
+                      loading="lazy"
+                      class="card-horizontal-img"
+                      src="/assets/netflixlogo.jpg"
+                      alt="netflix"
+                    />
+  
+                    <div>
+                      <h1 class="card-head">Attack On Titan | Final Trailer</h1>
+                      <p class="card-text">Netflix</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <pre class="pre-code">
+                    <code class="language-html">      
+                      &lt;div class="card card-text-overlay card-vertical box-light">
+                    &lt;img
+                        loading="lazy"
+                        class="card-vertical-img"
+                        src="/assets/trailer-thumbnail.jpg"
+                        alt="AOT final trailer jpg"
+                        &lt;/>
+    
+                        &lt;span class="card-vertical-img overlay-content"
+                        >&lt;i class="fas fa-play overlay-play-icon">&lt;/i> Play&lt;/span
+                      >
+    
+                      &lt;div class="card-text-overlay-row">
+                      &lt;img
+                          loading="lazy"
+                          class="card-horizontal-img"
+                          src="/assets/netflixlogo.jpg"
+                          alt="netflix"
+                          &lt;/>
+    
+                          &lt;div>
+                          &lt;h1 class="card-head">Attack On Titan | Final Trailer&lt;/h1>
+                          &lt;p class="card-text">Netflix&lt;/p>
+                          &lt;/div>
+                          &lt;/div>
+                          &lt;/div>
+                    </code>
+                  </pre>
+            </div>
+          </section>
+          <!-- Overlay Card  ends -->
 
-            <pre class="pre-code">
-                  <code class="language-html">      
-                    &lt;div class="card card-vertical  shadow-light w-24">
-                    &lt;div class="card-vertical-header">
-                    &lt;span class="status-badge text-white">Bestseller&lt;/span>
-                      
-                    &lt;button class="ml-auto card-icon-btn ">
-                    &lt;i class="fa-regular fa-heart m-auto">&lt;/i>
-                    &lt;/button>
-                    &lt;/div>
-                    &lt;img class="card-vertical-image" src="/assets/demo-product-1.jpg" alt="">
-                    &lt;h1 class="card-head">Survey Corps Pin&lt;/h1>
-                      
+          <!--  Vertical card starts -->
+        <section class="section-component my2" id="card-vertical">
+            <h2 class="my-2">Vertical Card with Badge</h2>
+            <div class="component-container">
+              <div class="flex justify-c-ctr alg-i-ctr gap1">
+                <div class="card card-vertical shadow-light w-24">
+                  <div class="card-vertical-header">
+                    <span class="status-badge text-white">Bestseller</span>
+  
+                    <button class="ml-auto card-icon-btn">
+                      <i class="fa-regular fa-heart m-auto"></i>
+                    </button>
+                  </div>
+                  <img
+                    class="card-vertical-image"
+                    src="/assets/demo-product-1.jpg"
+                    alt=""
+                  />
+                  <h1 class="card-head">Survey Corps Pin</h1>
+  
+                  <div class="card-vertical-footer">
+                    <span class="price">₹139.00</span>
+                    <span class="discount-price">₹1000.00</span>
+                    <span class="discount-percent">90%</span>
+                  </div>
+                </div>
+              </div>
+  
+              <pre class="pre-code">
+                    <code class="language-html">      
+                      &lt;div class="card card-vertical  shadow-light w-24">
+                      &lt;div class="card-vertical-header">
+                      &lt;span class="status-badge text-white">Bestseller&lt;/span>
+                        
+                      &lt;button class="ml-auto card-icon-btn ">
+                      &lt;i class="fa-regular fa-heart m-auto">&lt;/i>
+                      &lt;/button>
+                      &lt;/div>
+                      &lt;img class="card-vertical-image" src="/assets/demo-product-1.jpg" alt="">
+                      &lt;h1 class="card-head">Survey Corps Pin&lt;/h1>
+                        
+                    
+                      &lt;div class="card-vertical-footer">
+                      &lt;span class="price">₹139.00&lt;/span>
+                      &lt;span class="discount-price">₹1000.00&lt;/span>
+                      &lt;span class="discount-percent">90%&lt;/span>
+                      &lt;/div>
+                    
                   
-                    &lt;div class="card-vertical-footer">
-                    &lt;span class="price">₹139.00&lt;/span>
-                    &lt;span class="discount-price">₹1000.00&lt;/span>
-                    &lt;span class="discount-percent">90%&lt;/span>
-                    &lt;/div>
-                  
-                
-                    &lt;/div>
-                  </code>
-                </pre>
-          </div>
-        </section>
-        <!--  Vertical card ends -->
-      </main>
-      <!-- main doc ends -->
-
-      <!-- aside right link starts -->
+                      &lt;/div>
+                    </code>
+                  </pre>
+            </div>
+          </section>
+          <!--  Vertical card ends -->
+        </main>
+        <!-- main doc ends -->
+        <!-- aside right link starts -->
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
@@ -207,7 +269,6 @@
 
       <!-- aside right link starts -->
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
