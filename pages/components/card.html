@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space UI 🚀 | Card</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/c565ae8bc2.js"
+      crossorigin="anonymous"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+    />
+
+    <!-- space-ui component cdn -->
+    <link
+      rel="stylesheet"
+      href="https://space-ui-components.netlify.app/all-css/main.css"
+    />
+
+    <!-- space-ui documentation css -->
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="docs container p-2 m-auto">
+      <!-- header starts-->
+      <header class="header header-docs">
+        <a class="link-brand mx-1" href="/index.html">Space-UI 🚀</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/prathameshpcodes/Space-ui-components"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header ends -->
+
+      <!-- aside left starts -->
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li>
+              <a href="/pages/getting-started/intro.html"> Introduction </a>
+            </li>
+            <li>
+              <a href="/pages/getting-started/typography.html"> Typography </a>
+            </li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li>
+              <a href="/pages/components/alert.html">Alert</a>
+            </li>
+            <li><a href="/pages/components/avatar.html">Avatar</a></li>
+            <li><a href="/pages/components/badge.html">Badge</a></li>
+            <li><a href="/pages/components/button.html">Button</a></li>
+            <li>
+              <a class="link-active" href="/pages/components/card.html">Card</a>
+            </li>
+            <li>
+              <a href="/pages/components/image.html">Image</a>
+            </li>
+            <li><a href="/pages/components/input.html">Input</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- aside left ends -->
+
+      <!-- main doc starts -->
+      <main class="main-docs">
+        <h1 class="mb-3">Card</h1>
+        <p class="main-text">
+          Cards can be proved very useful. You can use them to display content
+          on an e-commerce app, or on a video library app. You can also use them
+          to show user feedback in the form of text-only card on your site.
+        </p>
+
+        <!--  Dismiss Card starts  -->
+        <section class="section-component my2" id="card-dismiss">
+          <h2 class="my-2">Dismiss Card with shadow</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap1">
+              <div class="card card-dismiss">
+                <button class="ml-auto text-red fs-md">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h1 class="card-head mt-1">Lorem Ipsum</h1>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                  alias dicta corporis aperiam
+                </p>
+              </div>
+            </div>
+
+            <pre class="pre-code">
+                  <code class="language-html">      
+                    &lt;div class="card card-dismiss ">
+                    &lt;button class=" ml-auto text-red fs-md ">
+                    &lt;i class="fa-solid fa-xmark">&lt;/i>
+                    &lt;/button>
+                    &lt;h1 class="card-head mt-1">Lorem Ipsum &lt;/h1>
+                    &lt;p class="card-text">""&lt;/p>
+                        &lt;/div>
+
+                  </code>
+                </pre>
+          </div>
+        </section>
+        <!-- Dismiss Card ends  -->
+
+
+
+        <!--  Vertical card starts -->
+        <section class="section-component my2" id="card-vertical">
+          <h2 class="my-2">Vertical Card with Badge</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap1">
+              <div class="card card-vertical shadow-light w-24">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-white">Bestseller</span>
+
+                  <button class="ml-auto card-icon-btn">
+                    <i class="fa-regular fa-heart m-auto"></i>
+                  </button>
+                </div>
+                <img
+                  class="card-vertical-image"
+                  src="/assets/demo-product-1.jpg"
+                  alt=""
+                />
+                <h1 class="card-head">Survey Corps Pin</h1>
+
+                <div class="card-vertical-footer">
+                  <span class="price">₹139.00</span>
+                  <span class="discount-price">₹1000.00</span>
+                  <span class="discount-percent">90%</span>
+                </div>
+              </div>
+            </div>
+
+            <pre class="pre-code">
+                  <code class="language-html">      
+                    &lt;div class="card card-vertical  shadow-light w-24">
+                    &lt;div class="card-vertical-header">
+                    &lt;span class="status-badge text-white">Bestseller&lt;/span>
+                      
+                    &lt;button class="ml-auto card-icon-btn ">
+                    &lt;i class="fa-regular fa-heart m-auto">&lt;/i>
+                    &lt;/button>
+                    &lt;/div>
+                    &lt;img class="card-vertical-image" src="/assets/demo-product-1.jpg" alt="">
+                    &lt;h1 class="card-head">Survey Corps Pin&lt;/h1>
+                      
+                  
+                    &lt;div class="card-vertical-footer">
+                    &lt;span class="price">₹139.00&lt;/span>
+                    &lt;span class="discount-price">₹1000.00&lt;/span>
+                    &lt;span class="discount-percent">90%&lt;/span>
+                    &lt;/div>
+                  
+                
+                    &lt;/div>
+                  </code>
+                </pre>
+          </div>
+        </section>
+        <!--  Vertical card ends -->
+      </main>
+      <!-- main doc ends -->
+
+      <!-- aside right link starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li><a href="#card-dismiss">Dismiss Card with shadow</a></li>
+            <li><a href="#card-overlay">Card with Overlay</a></li>
+            <li><a href="#card-vertical">Vertical Card with Badge</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- aside right link starts -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
