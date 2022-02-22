@@ -1,25 +1,23 @@
-:root{
-    --color-bg: var(--color-white);
-  
-    --color-brand: #5966f3;
-    --color-brand-dark: #5966f3;
-    --color-brand-light: #292c32;
-  
-    --color-text: #202124;
-    --color-text-300: var(--color-slate-300);
-    --color-code-wrapper:#202124;
-    --color-display-wrapper:#292C36;
-  }
-  
-  
-  html {
-      font-size: 62.5%;
-      scroll-behavior: smooth;
-    }
-  
-  
-    body {
-      background: var(--color-bg);
-      font-size: 1.6rem;
-    }
-    
+@import url("css/docs.css");
+:root {
+  --color-bg: var(--color-white);
+
+  --color-brand: #5966f3;
+  --color-brand-dark: #5966f3;
+  --color-brand-light: #292c32;
+
+  --color-text: #202124;
+  --color-text-300: var(--color-slate-300);
+  --color-code-wrapper: #202124;
+  --color-display-wrapper: #292c36;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  font-size: 1.6rem;
+}
