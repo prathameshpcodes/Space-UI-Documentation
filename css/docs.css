@@ -25,3 +25,22 @@
     top: 0;
     z-index: 1;
   }
+
+
+
+
+
+
+
+
+  /** main container */
+
+  .main-text {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
+
+  .main-docs {
+    grid-area: main;
+    padding: 2.5rem 2rem 3rem 4rem;
+  } 
