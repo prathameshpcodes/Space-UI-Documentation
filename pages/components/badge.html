@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space UI 🚀 | Badge</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/c565ae8bc2.js"
+      crossorigin="anonymous"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+    />
+
+    <!-- space-ui component cdn -->
+    <link
+      rel="stylesheet"
+      href="https://space-ui-components.netlify.app/all-css/main.css"
+    />
+
+    <!-- space-ui documentation css -->
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="docs container p-2 m-auto">
+      <!-- header starts-->
+      <header class="header header-docs">
+        <a class="link-brand mx-1" href="/index.html">Space-UI 🚀</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/prathameshpcodes/Space-ui-components"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header ends -->
+
+      <!-- aside left starts -->
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li>
+              <a href="/pages/getting-started/intro.html"> Introduction </a>
+            </li>
+            <li>
+              <a
+                
+                href="/pages/getting-started/typography.html"
+              >
+                Typography
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li>
+              <a href="/pages/components/alert.html">Alert</a>
+            </li>
+            <li><a href="/pages/components/avatar.html">Avatar</a></li>
+            <li>
+              <a class="link-active" href="/pages/components/badge.html"
+                >Badge</a
+              >
+            </li>
+            <li><a href="/pages/components/button.html">Button</a></li>
+            <li><a href="/pages/components/card.html">Card</a></li>
+            <li><a href="/pages/components/image.html">Image</a></li>
+            <li><a href="/pages/components/input.html">Input</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- aside left ends -->
+
+      <!-- main doc starts -->
+      <main class="main-docs">
+        <h1 class="mb-3">Badge</h1>
+        <p class="main-text">
+          Badges are small status descriptors. They can be used to represent the
+          notifications or status of a person
+        </p>
+
+        <!--  icon with badge  starts  -->
+        <section class="section-component my2" id="badge-icon">
+          <h2 class="my-2">Icon with Badge</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr">
+              <button class="badge-btn mx-1">
+                <i class="fas fa-home"></i>
+                <span class="badge-count bg-amber">9</span>
+              </button>
+
+              <button class="badge-btn mx-1">
+                <i class="fas fa-bell"></i>
+                <span class="badge-count bg-red"> 99+ </span>
+              </button>
+
+              <button class="badge-btn mx-1">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count bg-lime">69+</span>
+              </button>
+            </div>
+
+            <pre class="pre-code">
+                  <code class="language-html">      
+                    &lt;button class="badge-btn">
+                    &lt;i class="fas fa-home">&lt;/i>       
+                    &lt;span class="badge-count bg-amber">9&lt;/span>
+                    &lt;/button>
+                    
+                    &lt;button class="badge-btn">
+                    &lt;i class="fas fa-bell">&lt;/i>       
+                    &lt;span class="badge-count bg-red">99+&lt;/span>
+                    &lt;/button>
+
+
+                    &lt;button class="badge-btn">
+                    &lt;i class="fas fa-shopping-cart">&lt;/i>       
+                    &lt;span class="badge-count bg-lime">69+&lt;/span>
+                    &lt;/button>
+                  </code>
+                </pre>
+          </div>
+        </section>
+        <!-- icon with badge  starts  -->
+
+        <!-- avatar with badge starts -->
+        <section class="section-component my2" id="badge-icon">
+          <h2 class="my-2">Avatar with Badge</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap-1">
+              <div class="badge">
+                <img
+                  class="avatar avatar-md"
+                  src="/assets/avatar-1.png"
+                  alt=""
+                />
+                <span class="badge-status bg-lime"></span>
+              </div>
+
+              <div class="badge">
+                <img
+                  class="avatar avatar-md"
+                  src="/assets/avatar-2.png"
+                  alt=""
+                />
+                <span class="badge-status bg-red"></span>
+              </div>
+
+              <div class="badge">
+                <img
+                  class="avatar avatar-md"
+                  src="/assets/avatar-3.png"
+                  alt=""
+                />
+                <span class="badge-status bg-gray"></span>
+              </div>
+            </div>
+
+            <pre class="pre-code">
+                  <code class="language-html">      
+                    &lt;div class="badge">
+                    &lt;img  class="avatar avatar-md" src="..." alt="..." />        
+                    &lt;span class="badge-status bg-lime">&lt;/span>
+                    &lt;/div>
+
+                    &lt;div class="badge">
+                    &lt;img class="avatar avatar-md" src="..." alt="..." />        
+                    &lt;span class="badge-status bg-red">&lt;/span>
+                    &lt;/div>
+
+                    &lt;div class="badge">
+                    &lt;img  class="avatar avatar-md" src="..." alt="..." />
+                    &lt;span class="badge-status bg-grey">&lt;/span>
+                    &lt;/div>
+
+                  </code>
+                </pre>
+          </div>
+        </section>
+        <!-- avatar with badge ends -->
+      </main>
+      <!-- main doc ends -->
+
+      <!-- aside right link starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li><a href="#badge-icon">Icon With Badge</a></li>
+            <li><a href="#badge-avatar">Avatar With Badge</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- aside right link starts -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
