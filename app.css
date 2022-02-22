@@ -1,5 +1,6 @@
 @import url("css/docs.css");
-:root {
+
+:root{
   --color-bg: var(--color-white);
 
   --color-brand: #5966f3;
@@ -8,16 +9,117 @@
 
   --color-text: #202124;
   --color-text-300: var(--color-slate-300);
-  --color-code-wrapper: #202124;
-  --color-display-wrapper: #292c36;
+  --color-code-wrapper:#202124;
+  --color-display-wrapper:#292C36;
 }
+
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+
+  body {
+    background: var(--color-bg);
+    font-size: 1.6rem;
+  }
+  
+  /* container */
+
+  .container{
+    color: var(--color-text);
+  min-height: 100vh;
+  max-width: 140rem;
+  }
+
+
+
+  /* header */
+
+  .header {
+    border-bottom: thin solid var(--color-text);
+   
+  }
+
+   .footer-home, .header{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 4rem;
+  }
+
+  
+
+
+  /* link */
+
+
+  .link{
+    color: inherit;
+    font-size: 3rem;
+    position: relative;
+  }
+
+
+  .link-brand {
+    color: var(--color-brand);
+    font-weight: bold;
+    font-size: 3.5rem;
+    
+  }
+
+  .link-active,
+  .aside-left-container a.link-active {
+  background-color: var(--color-brand);
+font-weight: 600;
+border-right: 0.75rem solid var(--color-brand-light);
+border-radius: 0.2rem;
+padding: 0.5rem 8rem 0.5rem 0.3rem;
+  }
+  
+  .link-active::after,
+  .aside-left-container a.link-active::after {
+    background: var(--color-brand);
+  }
+  
+  .link:hover::after,
+  .aside-left-container a:hover::after {
+    left: 0;
+    width: 100%;
+  }
+
+  /* main */
+
+  .main{
+align-items: center;
+display: flex;
+font-size: 2.5rem;
+justify-content: center;
+min-height: 75vh;
+padding: 1.5rem;
+
 }
 
-body {
-  background: var(--color-bg);
-  font-size: 1.6rem;
+.main  div{
+  font-size: 2.5rem;
+max-width: 55rem;
+text-align: center;
+}
+
+.btn-home
+{
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--color-text-300);
+font-size: 2rem;
+margin: 3rem 1rem 1rem 0;
+width: 20rem;
+}
+
+
+.brand-name{
+font-weight: bold;
+background-color: var(--color-white);
+padding: 0.25rem 0.4rem;
+border-radius: 0.6rem;
+color: var(--color-brand);
 }
