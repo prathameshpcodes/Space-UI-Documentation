@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space UI 🚀 | List</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/c565ae8bc2.js"
+      crossorigin="anonymous"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+    />
+
+    <!-- space-ui component cdn -->
+    <link
+      rel="stylesheet"
+      href="https://space-ui-components.netlify.app/all-css/main.css"
+    />
+
+    <!-- space-ui documentation css -->
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="docs container p-2 m-auto">
+      <!-- header starts-->
+      <header class="header header-docs">
+        <a class="link-brand mx-1" href="/index.html">Space-UI 🚀</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/prathameshpcodes/Space-ui-components"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header ends -->
+      <!-- aside left starts -->
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li>
+              <a href="/pages/getting-started/intro.html"> Introduction </a>
+            </li>
+            <li>
+              <a href="/pages/getting-started/typography.html"> Typography </a>
+            </li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li>
+              <a href="/pages/components/alert.html">Alert</a>
+            </li>
+            <li><a href="/pages/components/avatar.html">Avatar</a></li>
+            <li><a href="/pages/components/badge.html">Badge</a></li>
+            <li><a href="/pages/components/button.html">Button</a></li>
+            <li><a href="/pages/components/card.html">Card</a></li>
+            <li><a href="/pages/components/image.html">Image</a></li>
+            <li><a href="/pages/components/input.html">Input</a></li>
+            <li>
+              <a class="link-active" href="/pages/components/list.html">List</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- aside left ends -->
+      <!-- main docs starts -->
+      <main class="main-docs">
+        <h1 class="mb-3">List</h1>
+        <p class="main-text">List can be used to show a list of items.</p>
+
+        <!--  checkbox list starts  -->
+        <section class="section-component my2" id="list-checkbox">
+          <h2 class="my-2">Checkbox List</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap-1">
+              <ul>
+                <li class="my-0p5 ml-1">
+                  <label class="cursor-ptr" for="collectibles">
+                    <input
+                      class="cursor-ptr mr-1"
+                      type="checkbox"
+                      name="category"
+                      id="collectibles"
+                    />
+                    Collectibles</label
+                  >
+                </li>
+
+                <li class="my-0p5 ml-1">
+                  <label class="cursor-ptr" for="masks">
+                    <input
+                      class="cursor-ptr mr-1"
+                      type="checkbox"
+                      name="category"
+                      id="masks"
+                    />
+                    Masks</label
+                  >
+                </li>
+
+                <li class="my-0p5 ml-1">
+                  <label class="cursor-ptr" for="tshirts">
+                    <input
+                      class="cursor-ptr mr-1"
+                      type="checkbox"
+                      name="category"
+                      id="tshirts"
+                    />
+                    T-shirts</label
+                  >
+                </li>
+                <li class="my-0p5 ml-1">
+                  <label class="cursor-ptr" for="backpack">
+                    <input
+                      class="cursor-ptr mr-1"
+                      type="checkbox"
+                      name="category"
+                      id="backpack"
+                    />
+                    Backpack</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <pre class="pre-code">
+                  <code class="language-html">      
+                        
+                        &lt;ul>
+                        &lt;li class="my-0p5 ml-1">
+                        &lt;label class="cursor-ptr" for="collectibles">
+                        &lt;input
+                            class="cursor-ptr mr-1"
+                            type="checkbox"
+                            name="category"
+                            id="collectibles"
+                            />
+                            Collectibles&lt;/label
+                            >
+                            &lt;/li>
+
+                            &lt;li class="my-0p5 ml-1">
+                            &lt;label class="cursor-ptr" for="masks">
+                            &lt;input
+                            class="cursor-ptr mr-1"
+                            type="checkbox"
+                            name="category"
+                            id="masks"
+                            />
+                            Masks</label>
+                            &lt;/li>
+
+                            &lt;li class="my-0p5 ml-1">
+                            &lt;label class="cursor-ptr" for="tshirts">
+                            &lt;input
+                            class="cursor-ptr mr-1"
+                            type="checkbox"
+                            name="category"
+                            id="tshirts"
+                            />
+                            T-shirts</label>
+                            &lt;/li>
+                            &lt;li class="my-0p5 ml-1">
+                            &lt;label class="cursor-ptr" for="backpack">
+                            &lt;input
+                            class="cursor-ptr mr-1"
+                            type="checkbox"
+                            name="category"
+                            id="backpack"
+                            />
+                            Backpack</label>
+                            &lt;/li>
+                            &lt;/ul>
+                            li class="my-0p5 ml-1">
+                            &lt;label class="cursor-ptr" for="collectibles">
+                            &lt;input
+                              class="cursor-ptr mr-1"
+                              type="checkbox"
+                              name="category"
+                              id="collectibles"
+                            />
+                            Collectibles</label>
+                            &lt;/li>
+                    
+                            &lt;li class="my-0p5 ml-1">
+                            &lt;label class="cursor-ptr" for="masks">
+                            &lt;input
+                              class="cursor-ptr mr-1"
+                              type="checkbox"
+                              name="category"
+                              id="masks"
+                            />
+                            Masks</label>
+                        </li>
+                    
+                        &lt;li class="my-0p5 ml-1">
+                        &lt;label class="cursor-ptr" for="tshirts">
+                        &lt;input
+                              class="cursor-ptr mr-1"
+                              type="checkbox"
+                              name="category"
+                              id="tshirts"
+                            />
+                            T-shirts</label>
+                          &lt;/li>
+                          &lt;li class="my-0p5 ml-1">
+                          &lt;label class="cursor-ptr" for="backpack">
+                          &lt;input
+                              class="cursor-ptr mr-1"
+                              type="checkbox"
+                              name="category"
+                              id="backpack"
+                            />
+                            Backpack</label>
+                          &lt;/li>
+                          &lt;/ul>
+                    
+                  </code>
+                </pre>
+          </div>
+        </section>
+        <!-- checkbox list ends  -->
+
+        <!--  radio list starts  -->
+        <section class="section-component my2" id="list-radio">
+            <h2 class="my-2">Radio List</h2>
+            <div class="component-container">
+              <div class="flex justify-c-ctr alg-i-ctr gap-1">
+                <ul>
+                    <li class="my-0p5 ml-1">
+                      <label class="cursor-ptr" for="low-to-high">
+                        <input
+                          class="cursor-ptr mr-1"
+                          type="radio"
+                          name="price"
+                          id="low-to-high"
+                        />
+                        Price - Low to High</label
+                      >
+                    </li>
+                
+                    <li class="my-0p5 ml-1">
+                      <label class="cursor-ptr" for="high-to-low">
+                        <input
+                          class="cursor-ptr mr-1"
+                          type="radio"
+                          name="price"
+                          id="high-to-low"
+                        />
+                        Price - High to Low</label
+                      >
+                    </li>
+                  </ul>
+              </div>
+              <pre class="pre-code">
+                    <code class="language-html">      
+                          
+                          &lt;ul>
+                          &lt;ul>
+                          &lt;li class="my-0p5 ml-1">
+                          &lt;label class="cursor-ptr" for="low-to-high">
+                          &lt;input
+                          class="cursor-ptr mr-1"
+                          type="radio"
+                          name="price"
+                          id="low-to-high"
+                        />
+                        Price - Low to High</label
+                      >
+                      &lt;/li>
+                
+                      &lt;li class="my-0p5 ml-1">
+                      &lt;label class="cursor-ptr" for="high-to-low">
+                      &lt;input
+                          class="cursor-ptr mr-1"
+                          type="radio"
+                          name="price"
+                          id="high-to-low"
+                        />
+                        Price - High to Low</label
+                      >
+                      &lt;/li>
+                      &lt;/ul>li class="my-0p5 ml-1">
+                      &lt;label class="cursor-ptr" for="low-to-high">
+                      &lt;input
+                                  class="cursor-ptr mr-1"
+                                  type="radio"
+                                  name="price"
+                                  id="low-to-high"
+                                />
+                                Price - Low to High</label
+                              >
+                              &lt;/li>
+                        
+                              &lt;li class="my-0p5 ml-1">
+                              &lt;label class="cursor-ptr" for="high-to-low">
+                              &lt;input
+                                  class="cursor-ptr mr-1"
+                                  type="radio"
+                                  name="price"
+                                  id="high-to-low"
+                                />
+                                Price - High to Low</label
+                              >
+                              &lt;/li>
+                              &lt;/ul>
+                      
+                    </code>
+                  </pre>
+            </div>
+          </section>
+          <!-- radio list ends  -->
+
+        <!-- stack list starts -->
+        <section class="section-component my2" id="list-stacked">
+            <h2 class="my-2">Stacked List</h2>
+            <div class="component-container">
+              <div class="flex justify-c-ctr alg-i-ctr gap-1">
+                <ul class="stacked-list">
+                    <li class="shadow-light">
+                      <a href="#"
+                        >Notification 🎉 1
+                        <span class="translate-y "><i class="fas fa-times text-red"></i></span
+                      ></a>
+                    </li>
+                
+                    <li class="shadow-light">
+                      <a href="#"
+                        >Notification 🎉 2
+                        <span class="translate-y"><i class="fas fa-times text-red"></i></span
+                      ></a>
+                    </li>
+                
+                    <li class="shadow-light">
+                      <a class="viewed" href="#"
+                        >Viewed Notification 🎉
+                        <span class="translate-y"><i class="fas fa-check"></i></span
+                      ></a>
+                    </li>
+                
+                    <li class="shadow-light">
+                      <a class="viewed" href="#"
+                        >Viewed Notification 🎉
+                        <span class="translate-y"><i class="fas fa-check"></i></span
+                      ></a>
+                    </li>
+                  </ul>
+              </div>
+              <pre class="pre-code">
+                    <code class="language-html">      
+                          
+                          &lt;ul class="stacked-list">
+                            &lt;li class="shadow-light">
+                            &lt;a href="#"
+                                >Notification 🎉 1
+                        &lt;span class="translate-y ">&lt;i class="fas fa-times text-red">&lt;/i>&lt;/span
+                              >&lt;/a>
+                              &lt;/li>
+                        
+                              &lt;li class="shadow-light">
+                              &lt;a href="#"
+                                >Notification 🎉 2
+                        &lt;span class="translate-y">&lt;i class="fas fa-times text-red">&lt;/i>&lt;/span
+                              >&lt;/a>
+                              &lt;/li>
+                        
+                              &lt;li class="shadow-light">
+                              &lt;a class="viewed" href="#"
+                                >Viewed Notification 🎉
+                        &lt;span class="translate-y">&lt;i class="fas fa-check">&lt;/i>&lt;/span
+                              >&lt;/a>
+                              &lt;/li>
+                        
+                              &lt;li class="shadow-light">
+                              &lt;a class="viewed" href="#"
+                                >Viewed Notification 🎉
+                        &lt;span class="translate-y">&lt;i class="fas fa-check">&lt;/i>&lt;/span
+                              >&lt;/a>
+                              &lt;/li>
+                              &lt;/ul>
+                      
+                    </code>
+                  </pre>
+            </div>
+          </section>
+        <!-- stack list ends -->
+      </main>
+      <!-- main doc ends -->
+
+      <!-- aside right link starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li><a href="#list-checkbox">Checkbox List</a></li>
+            <li><a href="#list-radio">Radio List</a></li>
+            <li><a href="#list-stacked">Stacked List</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- aside right link starts -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
