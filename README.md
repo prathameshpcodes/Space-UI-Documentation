@@ -1,8 +1,11 @@
 <div align="center">
 
+
+
 # Space-UI🚀
 
-Now design beautiful, creative,stunning and modern websites, with Space-UI🚀
+Now design beautiful, creative,stunning and modern websites, with   Space-UI 🚀
+
 
 ![Stars](https://img.shields.io/github/stars/prathameshpcodes/Space-UI-Documentation)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1fe7d1f-75e9-4c30-bd3a-8df76d74c08c/deploy-status)](https://app.netlify.com/sites/space-ui/deploys)
@@ -16,11 +19,12 @@ Now design beautiful, creative,stunning and modern websites, with Space-UI🚀
 To start using the components in your project, Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://space-ui-components.netlify.app/all-css/main.css"
-/>
+    <link
+        rel="stylesheet"
+        href="https://space-ui-components.netlify.app/all-css/main.css"
+    />
 ```
+
 
 ```
 
@@ -33,6 +37,7 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 - [Card](#card)
 - [Image](#image)
 - [Input](#input)
+- [Typography](#typography)
 
 
 ---
@@ -138,8 +143,7 @@ You will find the following types of _Typography_ on https://poshui.netlify.app/
 
 ---
 
-## 📧 Connect with me
-
+## 👨‍💻 Connect with me
 
 
 <a href="https://www.linkedin.com/in/prathameshpcodes/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
@@ -148,4 +152,3 @@ You will find the following types of _Typography_ on https://poshui.netlify.app/
 
 
 
-```
