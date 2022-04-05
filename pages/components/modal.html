@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space UI 🚀 | List</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/c565ae8bc2.js"
+      crossorigin="anonymous"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+    />
+
+    <!-- space-ui component cdn -->
+    <link
+      rel="stylesheet"
+      href="https://space-ui-components.netlify.app/all-css/main.css"
+    />
+
+    <!-- space-ui documentation css -->
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="docs container p-2 m-auto">
+      <!-- header starts-->
+      <header class="header header-docs">
+        <a class="link-brand mx-1" href="/index.html">Space-UI 🚀</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/prathameshpcodes/Space-ui-components"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header ends -->
+      <!-- aside left starts -->
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li>
+              <a href="/pages/getting-started/intro.html"> Introduction </a>
+            </li>
+            <li>
+              <a href="/pages/getting-started/typography.html"> Typography </a>
+            </li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li>
+              <a href="/pages/components/alert.html">Alert</a>
+            </li>
+            <li><a href="/pages/components/avatar.html">Avatar</a></li>
+            <li><a href="/pages/components/badge.html">Badge</a></li>
+            <li><a href="/pages/components/button.html">Button</a></li>
+            <li><a href="/pages/components/card.html">Card</a></li>
+            <li><a href="/pages/components/image.html">Image</a></li>
+            <li><a href="/pages/components/input.html">Input</a></li>
+            <li><a href="/pages/components/list.html">List</a></li>
+            <li>
+              <a class="link-active" href="/pages/components/modal.html"
+                >Modal</a
+              >
+            </li>
+            <li><a href="/pages/components/rating.html">Rating</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- aside left ends -->
+      <!-- main docs starts -->
+      <main class="main-docs">
+        <h1 class="mb-3">List</h1>
+        <p class="main-text">List can be used to show a list of items.</p>
+
+        <!--  modal component starts  -->
+        <section class="section-component my2">
+          <h2 class="my-2" id="modal-component">Modal Component</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap-1">
+              <div class="modal">
+                <div class="modal-head">Modal Head</div>
+
+                <p class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <div class="modal-foot">
+                  <button class="btn primary-btn-outline">Close</button>
+                  <button class="btn primary-btn-solid">Save Changes</button>
+                </div>
+              </div>
+            </div>
+            <pre class="pre-code">
+                  <code class="language-html">      
+                        
+                    &lt;div class="modal">
+                    &lt;div class="modal-head">Modal Head&lt;/div>
+                  
+                    &lt;p class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                    &lt;/p>
+                  
+                    &lt;div class="modal-foot">
+                    &lt;button class="btn primary-btn-outline">Close&lt;/button>
+                    &lt;button class="btn primary-btn-solid">Save Changes&lt;/button>
+                    &lt;/div>
+                    &lt;/div>
+                    
+                  </code>
+                </pre>
+          </div>
+        </section>
+        <!-- modal component ends  -->
+
+        <!--  modal demo starts  -->
+        <section class="section-component my2">
+          <h2 class="my-2" id="modal-demoo">Modal Demo</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap-1">
+              <button
+                id="modal-demo-btn"
+                class="btn primary-btn-solid border-r-l"
+              >
+                Modal Demo
+              </button>
+              <div id="modal-container" class="d-none modal-container">
+                <div class="mx-auto modal">
+                  <div class="modal-head">Modal Head</div>
+
+                  <p class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+
+                  <div class="modal-foot">
+                    <button
+                      id="modal-close-btn"
+                      class="btn primary-btn-outline"
+                    >
+                      Close
+                    </button>
+                    <button class="btn primary-btn-solid">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre class="pre-code">
+                    <code class="language-html">      
+                          
+                      &lt;div class="modal">
+                      &lt;div class="modal-head">Modal Head&lt;/div>
+                    
+                      &lt;p class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat.
+                      &lt;/p>
+                    
+                      &lt;div class="modal-foot">
+                      &lt;button class="btn primary-btn-outline">Close&lt;/button>
+                      &lt;button class="btn primary-btn-solid">Save Changes&lt;/button>
+                      &lt;/div>
+                      &lt;/div>
+                      
+                    </code>
+                  </pre>
+          </div>
+        </section>
+        <!-- modal demo ends  -->
+      </main>
+      <!-- main doc ends -->
+
+      <!-- aside right link starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li><a href="#modal-component">Modal Component</a></li>
+            <li><a href="#modal-demoo">Modal Demo </a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- aside right link starts -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://space-ui-components.netlify.app/js/index.js"></script>
+  </body>
+</html>
