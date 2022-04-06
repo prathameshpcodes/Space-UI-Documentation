@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space UI 🚀 | Toast</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/c565ae8bc2.js"
+      crossorigin="anonymous"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+    />
+
+    <!-- space-ui component cdn -->
+    <link
+      rel="stylesheet"
+      href="https://space-ui-components.netlify.app/all-css/main.css"
+    />
+
+    <!-- space-ui documentation css -->
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="docs container p-2 m-auto">
+      <!-- header starts-->
+      <header class="header header-docs">
+        <a class="link-brand mx-1" href="/index.html">Space-UI 🚀</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/prathameshpcodes/Space-ui-components"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header ends -->
+      <!-- aside left starts -->
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li>
+              <a href="/pages/getting-started/intro.html"> Introduction </a>
+            </li>
+            <li>
+              <a href="/pages/getting-started/typography.html"> Typography </a>
+            </li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li>
+              <a href="/pages/components/alert.html">Alert</a>
+            </li>
+            <li><a href="/pages/components/avatar.html">Avatar</a></li>
+            <li><a href="/pages/components/badge.html">Badge</a></li>
+            <li><a href="/pages/components/button.html">Button</a></li>
+            <li><a href="/pages/components/card.html">Card</a></li>
+            <li><a href="/pages/components/image.html">Image</a></li>
+            <li><a href="/pages/components/input.html">Input</a></li>
+            <li><a href="/pages/components/list.html">List</a></li>
+            <li><a href="/pages/components/modal.html">Modal</a></li>
+            <li><a href="/pages/components/rating.html">Rating</a></li>
+            <li>
+              <a class="link-active" href="/pages/components/toast.html"
+                >Toast</a
+              >
+            </li>
+            <li><a href="/pages/components/tooltip.html">Tooltip</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- aside left ends -->
+      <!-- main docs starts -->
+      <main class="main-docs">
+        <h1 class="mb-3">Toast</h1>
+        <p class="main-text">
+          Toast can be used to show notifications to the user
+        </p>
+
+        <!--  Notification Toast starts  -->
+        <section class="section-component my2" id="toast-notification">
+          <h2 class="my-2">Notification Toast</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap1">
+              <div class="toast">
+                <div class="toast-head">
+                  Notification 🎉
+                  <button class="toast-cross text-red">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <p class="toast-msg">
+                  Hey! build blazing-fast websites using
+                  <a class="toast-link" href="https://space.netlify.app"
+                    >Space UI🚀</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <pre class="pre-code">
+                    <code class="language-html">      
+                    &lt;div class="toast">
+                    &lt;div class="toast-head">
+                        Notification 🎉
+                    &lt;button class="toast-cross text-red">
+                    &lt;i class="fas fa-times">&lt;/i>
+                    &lt;/button>
+                    &lt;/div>
+                    &lt;p class="toast-msg">
+                    Hey! build blazing-fast websites using
+                    &lt;a class="toast-link" href="https://space.netlify.app">Space UI🚀&lt;/a>
+                    &lt;/p>
+                    &lt;/div>
+                    </code>
+                  </pre>
+          </div>
+        </section>
+        <!-- Notification Toast ends  -->
+
+        <!-- Notification Toast Demo starts -->
+        <section class="section-component my2" id="toast-notificationdemo">
+          <h2 class="my-2">Notification Toast Demo</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap1">
+              <button
+                id="notification-toast-demo-btn"
+                class="btn primary-btn-solid border-r-l"
+              >
+                Toast Demo Btn
+              </button>
+
+              <div id="notification-toast" class="d-none toast toast-fixed">
+                <div class="toast-head">
+                  Notification 🎉
+                  <button id="toast-cross-btn" class="toast-cross text-red">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+
+                <p class="toast-msg">
+                  Hey! build blazing-fast websites using
+                  <a class="toast-link" href="https://space.netlify.app"
+                    >Space UI🚀</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <pre class="pre-code">
+            <code class="language-html">      
+                    &lt;button
+                    id="notification-toast-demo-btn"
+                    class="btn primary-btn-solid border-r-l"
+                    >
+                    Toast Demo Btn
+                    &lt;/button>
+                  
+                    &lt;div id="notification-toast" class="d-none toast toast-fixed">
+                    &lt;div class="toast-head">
+                    Notification 🎉
+                    &lt;button id="toast-cross-btn" class="toast-cross text-red">
+                    &lt;i class="fas fa-times">&lt;/i>
+                    &lt;/button>
+                    &lt;/div>
+                  
+                    &lt;p class="toast-msg">
+                    Hey! build blazing-fast websites using
+                    &lt;a class="toast-link" href="https://space.netlify.app">Space UI🚀&lt;/a>
+                    &lt;/p>
+                    &lt;/div>
+                      </code>
+                    </pre>
+          </div>
+        </section>
+        <!-- Notification Toast Demo end -->
+
+        <!-- Stacked Toast starts -->
+        <section class="section-component my2" id="toast-stacked">
+          <h2 class="my-2">Stacked Notification Toast Demo</h2>
+          <div class="component-container">
+            <div class="flex justify-c-ctr alg-i-ctr gap1">
+              <button
+                id="first-stacked-toast-btn"
+                class="btn primary-btn-solid border-r-l"
+              >
+                Stacked Toast 1
+              </button>
+              <button
+                id="second-stacked-toast-btn"
+                class="btn primary-btn-solid border-r-l"
+              >
+                Stacked Toast 2
+              </button>
+
+              <ul class="stacked-toast toast-fixed">
+                <li class="mt-1">
+                  <div id="stacked-toast-2" class="d-none toast">
+                    <div class="toast-head">
+                      Notification 🎉
+                      <button
+                        id="stacked-toast-2-cross-btn"
+                        class="toast-cross text-red"
+                      >
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+
+                    <p class="toast-msg">
+                      Hey! build blazing-fast websites using
+                      <a class="toast-link" href="https://space.netlify.app"
+                        >Space UI🚀</a
+                      >
+                    </p>
+                  </div>
+                </li>
+
+                <li class="mt-1">
+                  <div id="stacked-toast-1" class="d-none toast">
+                    <div class="toast-head">
+                      Notification 🎉
+                      <button
+                        id="stacked-toast-1-cross-btn"
+                        class="toast-cross text-red"
+                      >
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+
+                    <p class="toast-msg">
+                      Hey! build blazing-fast websites using
+                      <a class="toast-link" href="https://space.netlify.app"
+                        >Space UI🚀</a
+                      >
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+                    &lt;button
+                    id="first-stacked-toast-btn"
+                    class="btn primary-btn-solid border-r-l"
+                    >
+                    Stacked Toast 1
+                    &lt;/button>
+                    &lt;button
+                    id="second-stacked-toast-btn"
+                    class="btn primary-btn-solid border-r-l"
+                    >
+                    Stacked Toast 2
+                    &lt;/button>
+                  
+                    &lt;ul class="stacked-toast toast-fixed">
+                    &lt;li class="mt-1">
+                    &lt;div id="stacked-toast-2" class="d-none toast">
+                    &lt;div class="toast-head">
+                    Notification 🎉
+                    &lt;button id="stacked-toast-2-cross-btn" class="toast-cross text-red">
+                    &lt;i class="fas fa-times">&lt;/i>
+                    &lt;/button>
+                    &lt;/div>
+                  
+                    &lt;p class="toast-msg">
+                    Hey! build blazing-fast websites using
+                    &lt;a class="toast-link" href="https://space.netlify.app">Space UI🚀&lt;/a>
+                    &lt;/p>
+                    &lt;/div>
+                    &lt;/li>
+                  
+                    &lt;li class="mt-1">
+                    &lt;div id="stacked-toast-1" class="d-none toast">
+                    &lt;div class="toast-head">
+                    Notification 🎉
+                    &lt;button id="stacked-toast-1-cross-btn" class="toast-cross text-red">
+                    &lt;i class="fas fa-times">&lt;/i>
+                    &lt;/button>
+                    &lt;/div>
+                  
+                    &lt;p class="toast-msg">
+                    Hey! build blazing-fast websites using
+                    &lt;a class="toast-link" href="https://space.netlify.app">Space UI🚀&lt;/a>
+                    &lt;/p>
+                    &lt;/div>
+                    &lt;/li>
+                    &lt;/ul>
+                        </code>
+                      </pre>
+          </div>
+        </section>
+        <!-- Stacked Toast  ends-->
+      </main>
+      <!-- main doc ends -->
+
+      <!-- aside right link starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li><a href="#toast-notification">Notification Toast</a></li>
+            <li>
+              <a href="#toast-notificationdemo">Notification Toast Demo</a>
+            </li>
+            <li>
+              <a href="#toast-stacked">Stacked Notification Toast Demo</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- aside right link starts -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://space-ui-components.netlify.app/js/index.js"></script>
+  </body>
+</html>
